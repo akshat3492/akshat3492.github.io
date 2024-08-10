@@ -1,0 +1,32 @@
+.uniform-img {
+  width: 100% !important;
+  height: 200px !important;
+  object-fit: contain !important; /* Change from cover to contain to see the entire image */
+  background-color: #000; /* Optional: background color to fill any empty space */
+}
+
+.post-title {
+  margin-bottom: 10px; /* Adjusts space under titles */
+}
+
+article {
+  margin-bottom: 30px; /* Maintains bottom space between articles */
+}
+
+.row {
+  margin-top: 16px;
+  display: flex;
+  align-items: center;
+}
+
+.col-md-3 img {
+  display: block;
+  margin: 0 auto;
+}
+
+.col-md-9 {
+  padding-left: 0;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}

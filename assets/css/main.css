@@ -293,15 +293,3 @@ d-appendix a:hover, d-appendix a.footnote-backlink:hover { color: var(--global-h
 
 /*# sourceMappingURL=main.css.map */
 
-
-/* Override all possible influences */
-img {
-  max-width: none !important;
-  width: 150px !important;
-  height: auto !important;
-  display: block !important;
-  object-fit: cover !important;
-  margin-right: 20px;
-  margin: 0 !important; /* Reset any potential margin issues */
-  padding: 0 !important; /* Reset any potential padding issues */
-}
