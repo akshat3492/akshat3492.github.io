@@ -19,7 +19,7 @@
 
 <title>
 
-  Manan Mehta | Projects
+  Akshat Sanghvi | Projects
 
 </title>
 <meta name="description" content="">
@@ -45,7 +45,7 @@
 <link rel="icon" href="data:image/svg+xml,<svg xmlns=%22http://www.w3.org/2000/svg%22 viewBox=%220 0 100 100%22><text y=%22.9em%22 font-size=%2290%22></text></svg>">
 
 <link rel="stylesheet" href="/assets/css/main.css">
-<link rel="canonical" href="https://mananm2.github.io/publications/">
+<link rel="canonical" href="https://akshat3492.github.io/projects/">
 
 
 <!-- Dark Mode -->
@@ -65,8 +65,8 @@
     <nav id="navbar" class="navbar navbar-light navbar-expand-sm fixed-top">
     <div class="container">
       
-      <a class="navbar-brand title font-weight-lighter" href="https://mananm2.github.io/">
-       <span><b>Manan Mehta</b></span>
+      <a class="navbar-brand title font-weight-lighter" href="https://akshat3492.github.io/">
+       <span><b>Akshat Sanghvi</b></span>
       </a>
       
       <!-- Navbar Toggle -->
@@ -88,7 +88,7 @@
           
           <li class="nav-item ">
               <a class="nav-link" href="/cv/">
-                CV
+                Resume
                 
               </a>
           </li>
@@ -133,134 +133,38 @@
   <div class="post">
 
   <header class="post-header">
-    <h2 class="post-title">Ph.D. Research Projects</h2>
+    <h2 class="post-title">Academic/Learning Projects</h2>
     <p class="post-description"></p>
   </header>
 
   <article>
-    <h5 class="post-title"><a href="#" onclick="return false;">1. Federated learning for privacy-preserving distributed deep learning</a></h5>
+    <h5 class="post-title"><a href="#" onclick="return false;">1. Self-Supervised Learning</a></h5>
 
-    <p><b>Machine learning context:</b> Federated learning (FL) is a distributed machine learning paradigm where several clients collaboratively train a model under the orchestration of a central server, 
-      while keeping the training data decentralized and private. Conventionally, a global model is constructed by pooling raw data from different clients into a central database for model training. 
-      FL enables clients to obtain a globally optimized model without uploading data to a central database or sharing proprietary data with other clients, thus maintaining data privacy without compromising performance.</p>
-
-    <p>The <a href="https://arxiv.org/pdf/1602.05629.pdf" target="_blank" rel="noopener noreferrer"> Federated Averaging algorithm (FedAvg)</a> enables FL on decentralized data. It works as follows: 
-      First, the central server initializes a global model and shares it across all participating clients participating. Each client downloads this model and improves it by training on its local data 
-      for some epochs. The parameter updates of the local models (think weights of a neural network) are uploaded to the central server where they are aggregated and incorporated into the global model. </p>
-
-      <div>
-        <img class="img-fluid z-depth-0 rounded" src="/assets/img/fl.jpg" width="1000" height="1000" alt="FL Photo">
-      </div>
     
-      <p> </p>
-    <p><b>Manufacturing application 1: Semantic segmentation for pixel-scale defect detection from images</b></p> 
-    <p>Semantic segmentation is an ML-based computer vision technique which enables fine-scale defect detection in additive manufacturing (AM). Most existing segmentation methods utilize CNN architectures that require large quantities of training data. 
-      However, obtaining sufficient data — both in quality and quantity — is costly in AM. This limits the deployment of semantic segmentation in a data-scarce production environment. Similar data may be readily available at other AM sites but cannot be pooled 
-      for centralized learning (CL) due to its proprietary nature.</p>
+      <p><b>Coming soon!</b> </p>
     
-    <p>We use FL to simultaneously alleviate both data scarcity and data privacy. We train a U-Net architecture under the FL framework and observe excellent defect detection performance even when individual manufacturers have only one or two images!
-      FL achieves a comparable defect detection performance with CL (which shares data across clients and does not preserve data privacy) and significantly outperforms individual learning (where each client trains on its own data only). We thus show that FL enables
-      the <i>best of both worlds.</i> </p>
-      
-    <p>Read our open-source paper <a href="https://reader.elsevier.com/reader/sd/pii/S0278612522001054?token=68B5A0A2634ED007EA82C99BF7811A6944D08D63AA4D71E2B3725B9FA4B1989DF960C335FCD90C1EB20A9A5C658B01F8&originRegion=us-east-1&originCreation=20230516210245" target="_blank" rel="noopener noreferrer">here</a>. 
-      Our code is available <a href="https://github.com/mananm2/FLAM" target="_blank" rel="noopener noreferrer">here</a>. 
-      This work was featured in <a href="https://mechse.illinois.edu/news/51141" target="_blank" rel="noopener noreferrer">MechSE News</a>.
-    </p>
-
-    <div>
-        <img class="img-fluid z-depth-0 rounded" src="/assets/img/unet.jpg" width="1000" height="1000" alt="Unet Photo">
-    </div>
-    <div>
-        <img class="img-fluid z-depth-0 rounded" src="/assets/img/flamresult.jpg" width="1000" height="1000" alt="FLAM Result Photo">
-    </div>
-    
-    <p> </p>
-    
-    <p><b>Manufacturing application 2: Mixed fault classification in rotating machinery</b></p>
-    <p> Rotating machinery is ubiquitous in modern industrial systems. Ensuring optimal operating conditions for rotating machinery is essential to satisfy stringent requirements on safety, efficiency, and reliability. 
-      State-of-the-art performance for fault detection has been achieved using deep learning-based methods which generally require large quantities of high-quality data. 
-      We develop an FL framework for the diagnosis of mixed faults from multiple factories. We construct a novel duplet classifier to separate the mixed fault classification task into parallel networks (each network responsible for one component). 
-      Experimental results show that FL yields excellent mixed fault classification accuracy for all participating factories even under highly unbalanced and heterogeneous distributions of fault labels. See our slides <a href="https://mananm2.github.io/assets/pdf/NAMRC_121_Mehta.pdf" target="_blank" rel="noopener noreferrer">here</a>.</p>
-    <div>
-      <img class="img-fluid z-depth-0 rounded" src="/assets/img/dupletcnn.jpg" width="1000" height="1000" alt="Duplet Photo">
-    </div>
-    <div>
-        <img class="img-fluid z-depth-0 rounded" src="/assets/img/flmixedfaultresult.jpg" width="1000" height="1000" alt="FL MF Result Photo">
-    </div>
-    <p> </p>
 
   </article>
 
   <p> <br /> </p>
 
   <article>
-    <h5 class="post-title"><a href="#" onclick="return false;">2. Addressing stasticial hetergeneity in federated learning using client clustering</a></h5>
+    <h5 class="post-title"><a href="#" onclick="return false;">2. Generative Adverserial Networks</a></h5>
 
-    <p><b>Machine learning context:</b>  Many recent studies have shown that the global model learned by FL may not be suitable for all clients. While FL can handle some stastical heterogeneity in client data, it yields suboptimal results 
-      when the distributions diverge significantly. To tackle this, three main lines of research are prevalent. The first line of research focuses on improving the single global model learned by FedAvg to accommodate non-IID data. 
-      The second line of research learns individually optimized models for each client (personalized FL). The third line of research is clustered FL, which assumes that groups of clients share one data distribution. Here, a 
-      personalized model is learned for each group rather than each individual client.</p>
-
-      <p>The focus of our work is clustered FL. We develop a state-of-the-art method <b>F</b>ederated <b>L</b>earning via <b>A</b>gglomerative <b>C</b>lient <b>C</b>lustering (FLACC) using gradient updates from FedAvg to cluster
-      similar clients together. For some cool math, read our open-source paper <a href="https://ieeexplore.ieee.org/stamp/stamp.jsp?tp=&arnumber=10059167" target="_blank" rel="noopener noreferrer">here</a>. This work was featured in <a href="https://mechse.illinois.edu/news/54237" target="_blank" rel="noopener noreferrer">MechSE News</a>.</p>
-      <div>
-        <img class="img-fluid z-depth-0 rounded" src="/assets/img/flhetero.jpg" width="1000" height="1000" alt="FLACC Photo">
-      </div>
-    <p> </p>
-    <div class="profile float-right">
-      <img class="img-fluid z-depth-0 rounded" src="/assets/img/flaccfaultresult.jpg"  width="500" height="500" alt="FLACC 2 Photo">
-    </div>
-    <p><b>Manufacturing application:</b> We test FLACC on a realistic industrial scenario where 48 factories participate in FL and each factory produces only one or two types of faults.
-      Under such extreme statistical heterogeneity, vanilla FL is not well suited as shown by the FedAvg accuracy in the figure. Contrarily, FLACC identifies and clusters similar
-      entities solely based on their gradients and without looking at their signals. FLACC separates factories into independent federations leading to significant increase in classification accuracy.</p> 
+    <p><b>Coming soon!</b> </p>
   </article>
 
   <p> <br /> </p>
 
   <article>
-    <h5 class="post-title"><a href="#" onclick="return false;">3. Active learning for multi-task learning with Gaussian processes</a></h5>
-    <div class="profile float-right">
-      <img class="img-fluid z-depth-0 rounded" src="/assets/img/gp.png"  width="400" height="400" alt="GP Photo">
-    </div>
-
-    <p><b>Machine learning context:</b> Gaussian processes (GPs) are a powerful machine learning tool useful for both classification and regression. A GP is a collection of random variables, 
-      any finite number of which are jointly Gaussian. GPs are very flexible in fitting highly non-linear functions to relatively small datasets using covaraiance functions called kernels.
-      Using this covariance, GPs provide an analytical expression for prediction uncertainty, thereby enabling sequntial sampling in a target domain (active learning). A beautiful visual
-      introduction to GPs can be found <a href="https://distill.pub/2019/visual-exploration-gaussian-processes/" target="_blank" rel="noopener noreferrer">here</a>.
-
-    <p>Multi-task learning (MTL) refers to learning many <i>similar-but-not-identical</i> tasks together while exploiting commonalities and differences across tasks. MTL improves learning efficiency 
-      and accuracy compared to training each task separately. There has been significant research on MTL with GPs and active learning using GPs. But active learning for MTL of GPs has not been 
-      studied.</p>
-
-      <div class="profile float-right">
-        <img class="img-fluid z-depth-0 rounded" src="/assets/img/gp2.jpg" width="500" height="1000" alt="GP2 Photo">
-      </div>
-
-    <p><b>Manufacturing application:</b> GPs are popular for response surface modeling in manufacturing, where the task is to map a set of process inputs to known outputs. We consider a simple 2D
-       example of a machined engine head. The task here is to reconstruct the entire surface using only a few strategic measurements. Since a factory produces several such surfaces using similar process
-       parameters, MTL can be used to reconstruct many engine surfaces together.</p> 
-    
-    <p>The problem we solve is: <i>To obtain the least possible reconstruction error using as few measurements as possible, which engine surface should we measure and where
-       should we measure it?</i> If you are interested in the math, please refer to our paper <a href="https://www.sciencedirect.com/science/article/pii/S0278612521001928" target="_blank" rel="noopener noreferrer">here</a>.</p>
+    <h5 class="post-title"><a href="#" onclick="return false;">3. Pixel-Level Semantic Segmentation</a></h5>
   </article>
-
+  <p><b>Coming soon!</b> </p>
   <p> <br /> </p>
   
   <article>
-    <h5 class="post-title"><a href="#" onclick="return false;">4. Multi-task response surface modeling with multi-resolution data</a></h5>
-
-    <p><b>Machine learning context:</b> There are several methods for multi-task learning with Gaussian processes (GPs) in literature. Most of these methods learn the GP mean and covariance functions for each task
-          from the training data. Some of these parameters represent input uncertainty in the system. Practically, the input uncertainty is inherent to a system and not learned for it.
-          To solve this, we develop a heirarchical Bayesian framework for multi-task response surface modeling using GPs and derive an expectation maximization (EM) algorithm. Our method can explicitly encode 
-          input uncertainty rather than fitting it to data, making it more practical for real systems.
-  
-    <div>
-    <img class="img-fluid z-depth-0 rounded" src="/assets/img/gp3.jpg" width="1000" height="1000" alt="GP3 Photo">
-    </div>
-    <p> </p>
-    <p><b>Manufacturing application:</b> In surface metrology, it is not uncommon to use gauges having multiple resolutions for measurement. For instance, a coordinate measurement machine can be used along with a 
-          profilometer or a laser holographic interferometer. Each gauge has a different repeatability which is known from prior experiments. Using our multi-task multi-resolution framework, we can encode the gauge 
-          uncertainties explicitly while making surface predictions, thus obtaining highly accurate surface reconstruction from limited measurements on engine surfaces.</p>
+    <h5 class="post-title"><a href="#" onclick="return false;">4. Spotify AI in Business</a></h5>
+  <p><b>Coming soon!</b> </p>
     
   </article>
 
@@ -270,33 +174,17 @@
 
 
 
-<div class="container mt-5">
-  <div class="post">
-
-  <header class="post-header">
-    <h2 class="post-title">Academic/Hobby Projects</h2>
-    <p class="post-description"></p>
-  </header>
-
-  <article>
-
-    <p>Coming soon</p>
-
-  </article>
-
-  </div>
-</div>
 
     <!-- Footer -->
 
-    
+<!--    
 <footer class="sticky-bottom mt-5">
   <div class="container">
     © Copyright 2024 Manan Mehta.
     Powered by <a href="http://jekyllrb.com/" target="_blank" rel="noopener noreferrer">Jekyll</a> with <a href="https://github.com/alshedivat/al-folio" target="_blank" rel="noopener noreferrer">al-folio</a> theme. Hosted by <a href="https://pages.github.com/" target="_blank" rel="noopener noreferrer">GitHub Pages</a>.
   </div>
 </footer>
-
+-->
 
 
   </body>
