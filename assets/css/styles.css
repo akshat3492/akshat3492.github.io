@@ -1,7 +1,8 @@
+
 .uniform-img {
   width: 100% !important;
   height: 200px !important;
-  object-fit: contain !important; /* Change from cover to contain to see the entire image */
+  object-fit: cover !important; /* Change from cover to contain to see the entire image */
   background-color: #000; /* Optional: background color to fill any empty space */
 }
 
